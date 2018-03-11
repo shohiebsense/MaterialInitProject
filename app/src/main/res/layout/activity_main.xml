@@ -1,0 +1,109 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/base_margin"
+    tools:context=".MainActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/progress_bar_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/image_horizontal_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="@dimen/base_padding"
+        android:paddingEnd="@dimen/base_padding"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:text="add Image here"
+        />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        app:layout_constraintTop_toBottomOf="@id/image_horizontal_logo"
+        android:paddingStart="@dimen/base_padding"
+        android:paddingEnd="@dimen/base_padding"
+        style="@style/SubheadText"
+        android:text="@string/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_login_info"
+        app:layout_constraintTop_toBottomOf="@id/text_welcome"
+        style="@style/CaptionText"
+        android:paddingStart="@dimen/base_padding"
+        android:paddingEnd="@dimen/base_padding"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/base_padding_smallest"
+        android:text="@string/login_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/login_form"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_login_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button_login"
+            android:layout_marginBottom="@dimen/base_margin_half">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_complete_text_phone_number"
+                style="@style/NumberInputOnlyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone_number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/LongRoundedButton"
+            app:layout_constraintBottom_toTopOf="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/action_sign_in" />
+
+        <TextView
+            android:id="@id/button_register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/provide_to_register"  />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

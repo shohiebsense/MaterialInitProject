@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SubheadText">
+        <item name="android:textSize">@dimen/text_subhead_size</item>
+    </style>
+
+    <style name="CaptionText">
+        <item name="android:textSize">@dimen/text_caption_size</item>
+    </style>
+
+    <style name="LongRoundedButton">
+
+    </style>
+
+    <style name="GeneralEditText">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GeneralEditTextLight">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="PersonNameEditText" parent="GeneralEditText">
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </style>
+
+    <style name="PhoneInputEditText" parent="GeneralEditText">
+        <item name="android:inputType">phone</item>
+        <item name="android:digits">0123456789</item>
+        <item name="android:maxLength">16</item>
+    </style>
+
+    <style name="NumberInputOnlyEditText" parent="GeneralEditText">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="NumberInputOnlyEditTextLight" parent="GeneralEditTextLight">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="EmailInputEditText" parent="GeneralEditText">
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">@string/hint_email_address</item>
+        <item name="android:imeOptions">actionUnspecified</item>
+    </style>
+
+</resources>

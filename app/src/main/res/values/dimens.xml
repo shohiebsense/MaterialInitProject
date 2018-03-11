@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_padding">16dp</dimen>
+    <dimen name="item_padding_half">8dp</dimen>
+    <dimen name="item_padding_smallest">4dp</dimen>
+
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="base_margin_half">8dp</dimen>
+    <dimen name="base_margin_moderate">24dp</dimen>
+    <dimen name="base_margin_doubled">32dp</dimen>
+    <dimen name="base_margin_smallest">4dp</dimen>
+
+    <dimen name="base_padding">16dp</dimen>
+    <dimen name="base_padding_half">8dp</dimen>
+    <dimen name="base_padding_moderate">24dp</dimen>
+    <dimen name="base_padding_doubled">32dp</dimen>
+    <dimen name="base_padding_smallest">4dp</dimen>
+
+    <dimen name="item_top_bottom_edge_margin">16dp</dimen>
+    <dimen name="item_margin_smallest">4dp</dimen>
+
+    <dimen name="item_elevation">4dp</dimen>
+
+    <dimen name="text_toolbar_size">20sp</dimen>
+    <dimen name="text_button_size">14sp</dimen>
+    <dimen name="text_title_size">20sp</dimen>
+    <dimen name="text_subhead_size">16sp</dimen>
+    <dimen name="text_body1_size">14sp</dimen>
+    <dimen name="text_body2_size">13sp</dimen>
+    <dimen name="text_caption_size">12sp</dimen>
+    <dimen name="text_big_size">24sp</dimen>
+    <dimen name="text_bigger_size">34sp</dimen>
+
+</resources>
