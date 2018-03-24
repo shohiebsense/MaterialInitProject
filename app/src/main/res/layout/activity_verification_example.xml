@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationExampleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_info"
+        app:title="@string/text_verification_code"
+        android:layout_marginTop="@dimen/base_margin_doubled"
+        app:titleTextColor="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/zeroPoint2Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/base_padding"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_top_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/zeroPoint2Horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_background_semi_transparent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/base_padding"
+        android:padding="@dimen/base_margin_half"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_register_verification"
+        >
+
+        <TextView
+            android:id="@+id/text_insert_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_insert_code"
+            android:textStyle="bold"
+            style="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/text_verification_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CaptionText"
+            android:text="@string/text_verification_code_hint"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_register_verification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_margin_moderate"
+        app:layout_constraintTop_toBottomOf="@+id/layout_info"
+        android:paddingBottom="@dimen/base_padding_moderate"
+        android:paddingLeft="@dimen/base_padding"
+        android:paddingRight="@dimen/base_margin">
+
+        <me.philio.pinentry.PinEntryView
+            android:id="@+id/edit_text_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button_resend_verification_code"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginBottom="@dimen/base_margin_moderate"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            app:digitWidth="45dp"
+            app:digitHeight="45dp"
+            app:digitSpacing="4dp"
+            app:accentType="character"
+            app:pinInputType="number"
+            app:mask="●"
+            app:numDigits="6"
+            app:digitTextSize="10sp"
+            app:digitBackground="@color/white"
+            app:digitTextColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/button_resend_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_count_down"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_verification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingBottom="@dimen/base_padding_moderate"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/text_resend_verification_code"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            />
+
+        <TextView
+            android:id="@+id/text_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/base_padding_half"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="@dimen/base_padding_moderate"
+            app:layout_constraintStart_toEndOf="@+id/button_resend_verification_code"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_verification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_resend_verification_code"
+            android:textColor="@color/gray_dark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="(60)"
+
+            />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar_register_verification"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

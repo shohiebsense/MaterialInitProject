@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_register_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin_half"
+        android:layout_marginEnd="@dimen/base_margin_half"
+        android:layout_marginTop="@dimen/base_margin_half"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_register_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_margin_half"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/text_register_group_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Informasi Pribadi"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+            <mehdi.sakout.appbuttons.appButton
+                android:id="@+id/button_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#7ab800"
+                app:fb_focusColor="#9bd823"
+                app:fb_fontIconResource="&#xf04b;"
+                app:fb_iconPosition="left"
+                app:fb_radius="30dp"
+                app:fb_text="SHUFFLE PLAY"
+                app:fb_textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

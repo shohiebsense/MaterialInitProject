@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CollapseToolbarActivity" />
+        <activity android:name=".FormExampleActivity" />
+        <activity android:name=".TabLayoutActivity" />
+        <activity android:name=".VerificationExampleActivity" />
+        <activity android:name=".ScanQrCodeActivity" />
+        <activity android:name=".HalfColoredBackgroundActivity" />
+        <activity android:name=".ItemExampleActivity" />
+        <activity android:name=".Item2ExampleActivity" />
+        <activity android:name=".Item3ExampleActivity" />
+        <activity android:name=".ExpandableItemActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".ContactsActivity"></activity>
     </application>
 
 </manifest>

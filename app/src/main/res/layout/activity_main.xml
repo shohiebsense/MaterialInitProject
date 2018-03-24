@@ -47,7 +47,6 @@
         style="@style/CaptionText"
         android:paddingStart="@dimen/base_padding"
         android:paddingEnd="@dimen/base_padding"
-        android:textColor="@color/white"
         android:layout_marginTop="@dimen/base_padding_smallest"
         android:text="@string/login_instruction"
         android:layout_width="wrap_content"
@@ -83,22 +82,33 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <Button
+        <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/button_login"
-            style="@style/LongRoundedButton"
             app:layout_constraintBottom_toTopOf="@+id/button_register"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:text="@string/action_sign_in" />
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            app:fb_borderColor="#FFFFFF"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="#7ab800"
+            app:fb_focusColor="#9bd823"
+            app:fb_fontIconResource="&#xf04b;"
+            app:fb_iconPosition="left"
+            app:fb_radius="30dp"
+            app:fb_text="@string/action_sign_in"
+            app:fb_textColor="#FFFFFF" />
+
 
         <TextView
-            android:id="@id/button_register"
+            android:id="@+id/button_register"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:textAllCaps="false"
             android:text="@string/provide_to_register"  />
 

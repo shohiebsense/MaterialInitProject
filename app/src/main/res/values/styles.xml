@@ -7,13 +7,27 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/text_title_size</item>
+    </style>
     <style name="SubheadText">
         <item name="android:textSize">@dimen/text_subhead_size</item>
     </style>
 
     <style name="CaptionText">
         <item name="android:textSize">@dimen/text_caption_size</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textSize">@dimen/text_body1_size</item>
+    </style>
+
+    <style name="ConstraintLayoutWithPadding">
+        <item name="android:padding">@dimen/base_padding</item>
     </style>
 
     <style name="LongRoundedButton">
@@ -23,6 +37,10 @@
     <style name="GeneralEditText">
         <item name="android:maxLines">1</item>
         <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CardViewMargin">
+        <item name="android:layout_margin">@dimen/base_margin</item>
     </style>
 
     <style name="GeneralEditTextLight">
