@@ -1,10 +1,7 @@
 package com.shohiebsense.constraintlayoutexample.fragment
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
-import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.AppCompatEditText
@@ -20,10 +17,9 @@ import android.widget.ImageView
 import com.shohiebsense.constraintlayoutexample.R
 import com.shohiebsense.constraintlayoutexample.model.Contact
 import com.shohiebsense.constraintlayoutexample.util.Contacts
-import com.shohiebsense.constraintlayoutexample.view.ContactRecyclerViewAdapter
+import com.shohiebsense.constraintlayoutexample.adapter.ContactRecyclerViewAdapter
 import com.shohiebsense.constraintlayoutexample.view.PaginationScrollListener
 import kotlinx.android.synthetic.main.fragment_contact_list.*
-import java.lang.ref.WeakReference
 
 /**
  * A simple [Fragment] subclass.

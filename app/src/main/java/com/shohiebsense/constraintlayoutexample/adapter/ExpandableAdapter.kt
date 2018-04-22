@@ -1,4 +1,4 @@
-package com.shohiebsense.constraintlayoutexample.view
+package com.shohiebsense.constraintlayoutexample.adapter
 
 import android.app.DatePickerDialog
 import android.support.v4.content.ContextCompat
@@ -146,7 +146,7 @@ class ExpandableAdapter (val expandableItemManager: RecyclerViewExpandableItemMa
 
     }
 
-    inner class RegisterTitleViewHolder(view : View) : ExpandableAdapter.BaseViewHolder(view) {
+    inner class RegisterTitleViewHolder(view : View) : BaseViewHolder(view) {
 
 
 
@@ -163,7 +163,7 @@ class ExpandableAdapter (val expandableItemManager: RecyclerViewExpandableItemMa
         }
     }
 
-    open inner class RegisterBodyViewHolder(view : View) : ExpandableAdapter.BaseViewHolder(view) {
+    open inner class RegisterBodyViewHolder(view : View) : BaseViewHolder(view) {
 
 
     }

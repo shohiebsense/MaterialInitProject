@@ -43,6 +43,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="Collapsing Toolbar"
                 >
             </android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
@@ -114,7 +115,7 @@
 
             </android.support.constraint.ConstraintLayout>
 
-            <io.square1.richtextlib.ui.RichContentView
+            <TextView
                 android:id="@+id/text_detail_promo_content"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -122,6 +123,7 @@
                 android:layout_marginStart="@dimen/base_margin_half"
                 android:layout_marginBottom="@dimen/base_margin_half"
                 android:layout_marginEnd="@dimen/base_margin_half"
+                android:text="Sample Text Body"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

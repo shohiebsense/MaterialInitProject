@@ -9,7 +9,7 @@ import android.view.MotionEvent
 import android.view.View
 import com.h6ah4i.android.widget.advrecyclerview.animator.RefactoredDefaultItemAnimator
 import com.h6ah4i.android.widget.advrecyclerview.expandable.RecyclerViewExpandableItemManager
-import com.shohiebsense.constraintlayoutexample.view.ExpandableAdapter
+import com.shohiebsense.constraintlayoutexample.adapter.ExpandableAdapter
 import kotlinx.android.synthetic.main.activity_expandable_item.*
 
 class ExpandableItemActivity : AppCompatActivity(), ExpandableAdapter.ItemClickListener {
@@ -32,7 +32,7 @@ class ExpandableItemActivity : AppCompatActivity(), ExpandableAdapter.ItemClickL
         mRecyclerViewExpandableItemManager.defaultGroupsExpandedState = false
         val animator = RefactoredDefaultItemAnimator()
 
-        adapter = ExpandableAdapter(mRecyclerViewExpandableItemManager,this)
+        adapter = ExpandableAdapter(mRecyclerViewExpandableItemManager, this)
         wrappedAdapter = mRecyclerViewExpandableItemManager.createWrappedAdapter(adapter)
         recycler.itemAnimator = animator
         recycler.setHasFixedSize(false)

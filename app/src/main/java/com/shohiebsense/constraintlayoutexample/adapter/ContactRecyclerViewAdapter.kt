@@ -1,7 +1,5 @@
-package com.shohiebsense.constraintlayoutexample.view
+package com.shohiebsense.constraintlayoutexample.adapter
 
-import android.content.Context
-import android.os.AsyncTask
 import android.support.v4.content.ContextCompat
 import android.support.v7.util.DiffUtil
 import android.support.v7.widget.RecyclerView
@@ -11,9 +9,7 @@ import android.view.ViewGroup
 import com.shohiebsense.constraintlayoutexample.R
 import com.shohiebsense.constraintlayoutexample.fragment.ContactListFragment
 import com.shohiebsense.constraintlayoutexample.model.Contact
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_contact.view.*
-import java.lang.ref.WeakReference
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the

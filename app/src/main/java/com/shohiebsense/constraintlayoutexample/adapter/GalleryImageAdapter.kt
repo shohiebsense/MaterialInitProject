@@ -1,4 +1,4 @@
-package com.shohiebsense.constraintlayoutexample.view
+package com.shohiebsense.constraintlayoutexample.adapter
 
 import android.app.Activity
 import android.content.Intent

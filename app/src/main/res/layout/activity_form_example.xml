@@ -58,6 +58,7 @@
                 android:layout_marginStart="@dimen/base_margin_half"
                 android:layout_marginTop="@dimen/base_margin_half"
                 android:contentDescription="TODO"
+                android:src="@drawable/sanders_circle"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/zeroPoint2Horizontal"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -111,7 +112,7 @@
 
                     <RadioGroup
                         android:id="@+id/radio_group_gender"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         app:layout_constraintEnd_toEndOf="parent"

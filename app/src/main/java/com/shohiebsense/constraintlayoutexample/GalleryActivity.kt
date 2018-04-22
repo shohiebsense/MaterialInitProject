@@ -11,7 +11,7 @@ import android.support.v7.widget.GridLayoutManager
 import android.util.Log
 import com.shohiebsense.constraintlayoutexample.model.ProfileImage
 import com.shohiebsense.constraintlayoutexample.util.ImageGalleryUtil
-import com.shohiebsense.constraintlayoutexample.view.GalleryImageAdapter
+import com.shohiebsense.constraintlayoutexample.adapter.GalleryImageAdapter
 import kotlinx.android.synthetic.main.activity_gallery.*
 
 class GalleryActivity : AppCompatActivity(), ImageGalleryUtil.ImagesGalleryListener,  GalleryImageAdapter.OnImageClickedListener {
@@ -94,7 +94,7 @@ class GalleryActivity : AppCompatActivity(), ImageGalleryUtil.ImagesGalleryListe
     }
 
     fun init(){
-        galleryImageAdapter = GalleryImageAdapter(arrayListOf(),this, this@GalleryActivity)
+        galleryImageAdapter = GalleryImageAdapter(arrayListOf(), this, this@GalleryActivity)
         val layoutManager = GridLayoutManager(this,2)
         layoutManager.orientation = GridLayoutManager.VERTICAL
         recycler_image.layoutManager = layoutManager
