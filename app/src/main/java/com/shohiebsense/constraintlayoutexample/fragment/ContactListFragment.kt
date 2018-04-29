@@ -145,21 +145,9 @@ class ContactListFragment : Fragment() {
     fun loadFirst(){
 
         var size = Contacts.getContactListSize(context!!)
-        if(size != 0){
-            //currentContactList = Contacts.getAllContactsFromDB(context!!,0) as ArrayList<Contact>
-        }
-        else{
-            currentContactList = Contacts.getContactDetails(context!!,contactsOffset)
-            size = Contacts.getContactListSize(context!!)
-        }
+        currentContactList = Contacts.getContactDetails(context!!,contactsOffset)
+
         addOffset()
-
-        if(size >= 100){
-            TOTAL_PAGES = size / 100
-            Log.e("shohiebsense ","total pages "+TOTAL_PAGES)
-        }
-        Log.e("shohiebsense ","size "+size)
-
 
         adapter = ContactRecyclerViewAdapter(currentContactList, mListener)
         recycler_contact.adapter = adapter
@@ -174,7 +162,7 @@ class ContactListFragment : Fragment() {
         CURRENT_PAGE += 1
         //val currentContactList = Contacts.getAllContactsFromDB(context!!,contactsOffset)
         addOffset()
-        adapter.updateItems(currentContactList as ArrayList<Contact>)
+        //adapter.updateItems(currentContactList as ArrayList<Contact>)
 
         if(CURRENT_PAGE < TOTAL_PAGES) adapter.addLoadingFooter()
         else {

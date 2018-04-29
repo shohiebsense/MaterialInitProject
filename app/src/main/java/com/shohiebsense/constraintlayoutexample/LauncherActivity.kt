@@ -72,7 +72,6 @@ class LauncherActivity : BaseActivity() {
         launcherMenus.add(LauncherMenu("Gallery Example", GalleryActivity::class.java))
         launcherMenus.add(LauncherMenu("Half Colored Background", HalfColoredBackgroundActivity::class.java))
         launcherMenus.add(LauncherMenu("Insert Picture Activity", InsertPictureActivity::class.java))
-
         launcherMenus.add(LauncherMenu("Item Example",ItemExampleActivity::class.java))
         launcherMenus.add(LauncherMenu("Item Example 2",Item2ExampleActivity::class.java))
         launcherMenus.add(LauncherMenu("Item Example 3",Item3ExampleActivity::class.java))
@@ -80,6 +79,7 @@ class LauncherActivity : BaseActivity() {
         launcherMenus.add(LauncherMenu("Scan Qr Code ",ScanQrCodeActivity::class.java))
         launcherMenus.add(LauncherMenu("Tab Layout ",TabLayoutActivity::class.java))
         launcherMenus.add(LauncherMenu("Verification Layout",VerificationExampleActivity::class.java))
+        launcherMenus.add(LauncherMenu("Full Window Dialog Activity",FullWindowDialogActivity::class.java))
 
         recycler_menu.layoutManager = LinearLayoutManager(this)
         adapter = LauncherMenuAdapter(launcherMenus)

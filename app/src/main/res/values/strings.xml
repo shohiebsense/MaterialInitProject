@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ConstraintLayoutExample</string>
+    <string name="app_name">Layouts &amp; Codes</string>
     <string name="login_instruction">This Is Login Page</string>
     <string name="welcome_message">This is welcome message</string>
     <string name="action_sign_in">Sign In</string>
@@ -46,5 +46,7 @@
     <string name="bank_account">Bank Account</string>
     <string name="transfer">Tab Layout</string>
     <string name="text_home">Home</string>
+    <string name="sample_info_text">sample information text</string>
+    <string name="scan_qr_code">Scan Qr Code</string>
 
 </resources>

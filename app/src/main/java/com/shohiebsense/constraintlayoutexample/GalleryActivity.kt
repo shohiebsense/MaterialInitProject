@@ -32,7 +32,7 @@ class GalleryActivity : AppCompatActivity(), ImageGalleryUtil.ImagesGalleryListe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gallery)
         if(intent != null){
-            isGalleryHomeDir = intent.getBooleanExtra(INTENT_IS_HOME_DIR,false)
+            isGalleryHomeDir = intent.getBooleanExtra(INTENT_IS_HOME_DIR,true)
             if(!isGalleryHomeDir) {
                 bucketImageId = intent.getStringExtra(INTENT_BUCKET_ID)
             }
@@ -54,12 +54,12 @@ class GalleryActivity : AppCompatActivity(), ImageGalleryUtil.ImagesGalleryListe
 
     override fun onImageClicked(productImage: ProfileImage) {
         val intent = Intent()
-        Log.e("shohiebsense ","image clicked")
+        Log.e("shohiebsense ","image clicked "+productImage.path)
         //intent.putExtra(ProfileActivity.INTENT_IMAGE, productImage)
        // intent.putExtra(ProfileActivity.INTENT_FLAG_IMAGE_GATHERED, true)
         setResult(Activity.RESULT_OK, intent)
         System.out.println("IMAGE CLICKED")
-        //finish()
+        finish()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

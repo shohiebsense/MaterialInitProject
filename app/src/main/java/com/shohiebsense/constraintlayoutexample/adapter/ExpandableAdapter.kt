@@ -171,9 +171,15 @@ class ExpandableAdapter (val expandableItemManager: RecyclerViewExpandableItemMa
 
     inner class PersonalInfoViewHolder(v: View) : RegisterBodyViewHolder(v) {
 
+        var calendar : Calendar
+
+        init {
+            calendar = Calendar.getInstance()
+            calendar.add(Calendar.YEAR, -10)
+        }
+
         var dateEditTextClickListener = object  : View.OnClickListener{
             val dateFormat = AppUtil.getDateFormFormat()
-            val calendar = Calendar.getInstance()
             val datePickerDialog = object: DatePickerDialog.OnDateSetListener{
 
                 override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
@@ -183,8 +189,8 @@ class ExpandableAdapter (val expandableItemManager: RecyclerViewExpandableItemMa
                     itemView.edit_date_of_birth.setText(dateFormat.format(calendar.time))
                 }
             }
+
             override fun onClick(v: View?) {
-                calendar.add(Calendar.YEAR, -10)
                 val datePicker  = DatePickerDialog(itemView.context, datePickerDialog,
                         calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH))
                 datePicker.datePicker.maxDate = calendar.timeInMillis

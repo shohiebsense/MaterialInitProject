@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/layout_root"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,9 +14,7 @@
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/layout_info"
         app:title="@string/text_verification_code"
-        android:layout_marginTop="@dimen/base_margin_doubled"
         app:titleTextColor="@color/white">
 
     </android.support.v7.widget.Toolbar>
@@ -27,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/base_padding"
-        app:layout_constraintGuide_percent="0.33" />
+        android:layout_marginBottom="60dp"
+        app:layout_constraintGuide_percent="0.37" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layout_top_home"
@@ -44,10 +41,13 @@
         android:id="@+id/layout_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue_background_semi_transparent"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/base_padding"
-        android:padding="@dimen/base_margin_half"
+        android:layout_marginTop="@dimen/base_padding_moderate"
+        android:paddingStart="@dimen/base_padding"
+        android:paddingEnd="@dimen/base_padding"
+        android:paddingBottom="@dimen/base_padding_moderate"
+        android:background="@color/blue_background_semi_transparent"
+        android:padding="@dimen/base_padding"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -69,7 +69,6 @@
             android:id="@+id/text_verification_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/CaptionText"
             android:text="@string/text_verification_code_hint"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -81,11 +80,12 @@
         android:id="@+id/layout_register_verification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/base_margin_moderate"
+        android:layout_marginTop="@dimen/base_padding_moderate"
         app:layout_constraintTop_toBottomOf="@+id/layout_info"
+        android:elevation="@dimen/base_padding"
         android:paddingBottom="@dimen/base_padding_moderate"
-        android:paddingLeft="@dimen/base_padding"
-        android:paddingRight="@dimen/base_margin">
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
 
         <me.philio.pinentry.PinEntryView
             android:id="@+id/edit_text_verification"
@@ -96,12 +96,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/button_resend_verification_code"
             app:layout_constraintVertical_chainStyle="packed"
-            android:layout_marginBottom="@dimen/base_margin_moderate"
+            android:layout_marginTop="@dimen/base_margin_half"
+            android:layout_marginBottom="@dimen/base_padding"
             android:cursorVisible="false"
             android:digits="1234567890"
             android:inputType="number"
             app:digitWidth="45dp"
             app:digitHeight="45dp"
+            app:digitElevation="@dimen/base_padding"
             app:digitSpacing="4dp"
             app:accentType="character"
             app:pinInputType="number"
@@ -131,7 +133,7 @@
             android:id="@+id/text_count_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/base_padding_half"
+            android:layout_marginStart="@dimen/base_padding"
             app:layout_constraintEnd_toEndOf="parent"
             android:paddingBottom="@dimen/base_padding_moderate"
             app:layout_constraintStart_toEndOf="@+id/button_resend_verification_code"

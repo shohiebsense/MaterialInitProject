@@ -49,7 +49,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/layout_input_phone_number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layout_input_full_name">
@@ -75,7 +74,6 @@
                 android:id="@+id/layout_input_phone_number"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/layout_input_date_of_birth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:textColorHint="@color/colorPrimary"
@@ -94,7 +92,6 @@
                 android:id="@+id/layout_input_date_of_birth"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/layout_input_email_address"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textColorHint="@color/colorPrimary"
                 app:layout_constraintStart_toStartOf="parent"
@@ -118,11 +115,10 @@
                 android:id="@+id/layout_input_email_address"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/checkbox_policy_agreement"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:textColorHint="@color/colorPrimary"
-                app:layout_constraintTop_toBottomOf="@+id/layout_input_phone_number">
+                app:layout_constraintTop_toBottomOf="@+id/layout_input_date_of_birth">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/edit_email_address"
@@ -144,7 +140,6 @@
                 android:text="@string/text_agreement_policy"
                 android:paddingStart="@dimen/base_margin_half"
                 android:drawablePadding="@dimen/base_margin_half"
-                app:layout_constraintBottom_toTopOf="@+id/button_next"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layout_input_email_address" />
@@ -156,9 +151,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/text_title_next_button"
                 android:textStyle="bold"
-                android:enabled="false"
                 style="@style/LongRoundedButton"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/checkbox_policy_agreement" />

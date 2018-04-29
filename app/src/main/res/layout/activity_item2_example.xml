@@ -15,7 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         app:contentPadding="@dimen/base_padding"
-        android:layout_gravity="top">
+        android:layout_gravity="top"
+        app:cardBackgroundColor="@color/gray_dark"
+        >
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"

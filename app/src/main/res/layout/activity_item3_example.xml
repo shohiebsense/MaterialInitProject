@@ -8,6 +8,7 @@
     android:layout_gravity="top"
     android:layout_margin="4dp"
     app:cardCornerRadius="@dimen/base_padding_half"
+    app:cardBackgroundColor="@color/gray_dark"
     >
 
     <android.support.constraint.ConstraintLayout

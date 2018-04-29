@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/frame_middle_bg"
@@ -67,14 +67,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.4" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.leochuan.AutoPlayRecyclerView
+        android:id="@+id/recycler_example"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_middle_bottom"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="1"
+        app:direction="right"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_height="wrap_content">
+
+    </com.leochuan.AutoPlayRecyclerView>
+
 
 
 </android.support.constraint.ConstraintLayout>
