@@ -29,6 +29,7 @@ public class OkHttpChuckNorrisResponseService  {
                 Log.e("shohiebsenseee ",message);
             }
         });
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
 
         HttpUrl.Builder httpBuilder = HttpUrl.parse(Constants.CHUCKNORRIS_URL).newBuilder();
