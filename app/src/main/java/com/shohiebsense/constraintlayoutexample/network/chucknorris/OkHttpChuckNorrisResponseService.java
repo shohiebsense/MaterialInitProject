@@ -26,11 +26,12 @@ public class OkHttpChuckNorrisResponseService  {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
             @Override
             public void log(String message) {
-                Log.e(this.getClass().getName(),message);
+                Log.e("shohiebsenseee ",message);
             }
         });
 
-        HttpUrl.Builder httpBuilder = HttpUrl.parse(Constants.PLACEKITTEN_URL).newBuilder();
+
+        HttpUrl.Builder httpBuilder = HttpUrl.parse(Constants.CHUCKNORRIS_URL).newBuilder();
         httpBuilder.addQueryParameter("category",chuckNorrisRequest.getCategory());
         OkHttpClient httpClient = new OkHttpClient.Builder().addInterceptor(logging).build();
         Request request = new Request.Builder().url(httpBuilder.build())

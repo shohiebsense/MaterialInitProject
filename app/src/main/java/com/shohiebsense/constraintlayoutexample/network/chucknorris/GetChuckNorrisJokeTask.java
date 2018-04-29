@@ -28,14 +28,17 @@ public class GetChuckNorrisJokeTask {
                 emitter.onSuccess(new OkHttpChuckNorrisService().getJoke(new ChuckNorrisRequest("religion")));
             }
         }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());
+
         Consumer<ChuckNorris> chuckNorrisConsumer = new Consumer<ChuckNorris>() {
             @Override
             public void accept(ChuckNorris chuckNorris) throws Exception {
                 listener.onSuccess(chuckNorris);
             }
         };
+        chuckNorrisSingle.subscribe(chuckNorrisConsumer);
         Disposable disposable = chuckNorrisSingle.subscribe(chuckNorrisConsumer);
         compositeDisposable.add(disposable);
+
         compositeDisposable.dispose();
     }
 

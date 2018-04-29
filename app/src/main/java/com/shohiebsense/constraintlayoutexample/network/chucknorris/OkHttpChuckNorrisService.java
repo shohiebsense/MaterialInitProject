@@ -1,11 +1,14 @@
 package com.shohiebsense.constraintlayoutexample.network.chucknorris;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.shohiebsense.constraintlayoutexample.model.ChuckNorris;
 import com.shohiebsense.constraintlayoutexample.model.ChuckNorrisRequest;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.Reader;
 
 import okhttp3.Response;
@@ -22,7 +25,8 @@ public class OkHttpChuckNorrisService {
         }
         Reader in = response.body().charStream();
         BufferedReader reader = new BufferedReader(in);
-        // chuckNorris = new Gson().fromJson(reader,ChuckNorris.class);
+
+        //chuckNorris = new Gson().fromJson(reader,ChuckNorris.class);
         chuckNorris = new Gson().fromJson(reader, new TypeToken<ChuckNorris>(){}.getType());
         return chuckNorris;
     }
