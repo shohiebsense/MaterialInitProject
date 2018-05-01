@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,32 +17,34 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity" />
-        <activity android:name=".CollapseToolbarActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
-        <activity android:name=".FormExampleActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
-        <activity android:name=".TabLayoutActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
-        <activity android:name=".VerificationExampleActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
-        <activity android:name=".ScanQrCodeActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
+        <activity
+            android:name=".CollapseToolbarActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".FormExampleActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".TabLayoutActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".VerificationExampleActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ScanQrCodeActivity"
+            android:theme="@style/AppThemeNoActionBar" />
         <activity android:name=".HalfColoredBackgroundActivity" />
         <activity android:name=".ItemExampleActivity" />
         <activity android:name=".Item2ExampleActivity" />
         <activity android:name=".Item3ExampleActivity" />
-        <activity android:name=".ExpandableItemActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
-        <activity android:name=".GalleryActivity"
-            android:theme="@style/AppThemeNoActionBar"
-            />
-        <activity android:name=".ContactsActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".ExpandableItemActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".GalleryActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ContactsActivity"
+            android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".LauncherActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -53,10 +56,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".InsertPictureActivity" />
-        <activity android:name=".FullWindowDialogActivity"
-            />
+        <activity android:name=".FullWindowDialogActivity" />
         <activity android:name=".OkHttpGsonExampleActivity" />
-        <activity android:name=".WeightAttributeActivity"/>
+        <activity android:name=".WeightAttributeActivity" />
+        <activity android:name=".LanguageSettingActivity"></activity>
     </application>
 
 </manifest>

@@ -48,5 +48,8 @@
     <string name="text_home">Home</string>
     <string name="sample_info_text">sample information text</string>
     <string name="scan_qr_code">Scan Qr Code</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="english">English</string>
+    <string name="setting_language">Language Setting</string>
 
 </resources>

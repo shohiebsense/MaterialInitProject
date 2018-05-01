@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_language">Pengaturan Bahasa</string>
+    <string name="indonesian">Bahasa Indonesia</string>
+    <string name="english">Bahasa Inggris</string>
+</resources>
