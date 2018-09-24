@@ -6,7 +6,7 @@
     android:layout_margin="1dp"
     >
 
-    <com.shohiebsense.constraintlayoutexample.view.SquareImageView
+    <com.shohiebsense.fintechtemplate.view.SquareImageView
         android:id="@+id/image_gallery"
         android:layout_width="match_parent"
         android:layout_height="200dp"
