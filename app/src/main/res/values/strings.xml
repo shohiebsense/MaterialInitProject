@@ -51,5 +51,6 @@
     <string name="indonesian">Indonesian</string>
     <string name="english">English</string>
     <string name="setting_language">Language Setting</string>
-
+    <string name="per_month">Mulai %1$s per Bulan</string>
+    <string name="per_months">Mulai %1$s per %2$s Bulan</string>
 </resources>
