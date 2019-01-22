@@ -47,7 +47,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:foreground="@drawable/bg_window_dim"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
@@ -75,7 +74,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         <android.support.design.widget.TabLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:id="@+id/tab_home_promo_spot"
+            android:id="@+id/tab_a_b"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintTop_toBottomOf="@+id/layout_point"
@@ -88,13 +87,13 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
             >
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tab_item_promo"
+                android:id="@+id/tab_item_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/promo" />
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tab_item_spot"
+                android:id="@+id/tab_item_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/spot" />
@@ -102,18 +101,18 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         </android.support.design.widget.TabLayout>
 
         <ScrollableViewPager
-            android:id="@+id/pager_promo_spot"
+            android:id="@+id/pager_a_b"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tab_home_promo_spot"
+            app:layout_constraintTop_toBottomOf="@+id/tab_a_b"
             />
 
         <android.support.design.widget.TabLayout
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:id="@+id/tab_home_news_event"
+            android:id="@+id/tab_c_d"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:tabIndicatorColor="@color/color_tab_indicator"
@@ -121,17 +120,17 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
             app:tabTextColor="@color/color_tab_text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pager_promo_spot"
+            app:layout_constraintTop_toBottomOf="@+id/pager_a_b"
             >
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tab_item_news"
+                android:id="@+id/tab_item_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/news" />
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tab_item_event"
+                android:id="@+id/tab_item_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/event" />
@@ -139,7 +138,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         </android.support.design.widget.TabLayout>
 
         <ScrollableViewPager
-            android:id="@+id/pager_news_event"
+            android:id="@+id/pager_c_d"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:nestedScrollingEnabled="true"
