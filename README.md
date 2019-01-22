@@ -30,10 +30,11 @@ Your home app displays Toolbar that can be scrolled, and there is a framelayout 
 
 Like this
 > activity_main
-
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.v4.widget.NestedScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -50,13 +51,11 @@ Like this
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
-
-
 </android.support.v4.widget.NestedScrollView>
-
+```
 > fragment_main
 
-
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -68,7 +67,6 @@ Like this
     android:background="@color/white_light"
     app:layout_behavior="@string/appbar_sc_view_behavior"
     >
-
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -235,3 +233,4 @@ Like this
 
         </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
+```
