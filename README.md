@@ -154,3 +154,5 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 ```
 
 2. Use recyclerview and apply FlexBoxLayoutManager, like when you created items horizontally and wrapped to the width of device.
+
+3. You have to set typeface programmatically to change Input Layout text/hint
