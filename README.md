@@ -161,3 +161,5 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 SpanableString(string)
 ForegroundColorSpan(
 StyleSpan(
+
+5. LRUCache is flexible in terms of data type compared to SharedPreferences, but LRUCache accepts thread safe only.
