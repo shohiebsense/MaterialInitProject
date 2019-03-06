@@ -163,3 +163,5 @@ ForegroundColorSpan(
 StyleSpan(
 
 5. LRUCache is flexible in terms of data type compared to SharedPreferences, but LRUCache accepts thread safe only.
+
+6. Don't use ListAdapter when it is so many user interactions, user recyclerview.adapter instead. submitlist still has an issue
